@@ -67,7 +67,7 @@ public class LdapUtil {
 
     private DirContext getDirContext() throws NamingException {
         Hashtable<String, String> env = new Hashtable<String, String>();
-        env.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.ldap.LdapCtxFactory"); //mostly that
+        env.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.ldap.LdapCtxFactory"); //generally this one
         env.put(Context.PROVIDER_URL, this.ldapUrl);
         env.put(Context.SECURITY_AUTHENTICATION, "simple");
         env.put(Context.SECURITY_PRINCIPAL, this.secrurityPrincipal);
