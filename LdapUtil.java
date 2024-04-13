@@ -22,7 +22,7 @@ public class LdapUtil {
     //TODO replace "password" with your ldap passwor
     private final String ldapCredentials = "password";
     
-    private final String ldapSearchBase = "OU=User,OU=GFL,DC=G,DC=FL,DC=local";
+    private final String ldapSearchBase = "OU=User,OU=GFL,DC=A,DC=BC,DC=DE";
 
 
     public Set<LdapUser> getAllLDapUsers() throws NamingException {
